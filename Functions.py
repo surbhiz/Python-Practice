@@ -1,4 +1,10 @@
+# Empty Function
+
+def empty_fun():
+    pass
+
 # SUM OF NUMBERS IN THE LIST
+
 
 a_list = [5, 10, 15, 20, 25]
 
@@ -19,3 +25,14 @@ for rating in ratings:
     else:
         content_ratings[rating] = 1
 print(content_ratings)
+
+# Creating a own function to get square of a number
+
+
+def square(a_num):
+    square_number = a_num * a_num
+    return square_number+10
+
+
+print(square(10))
+print(square(16))
