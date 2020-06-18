@@ -1,4 +1,7 @@
 # creating a init method in class
+import datetime
+
+
 class employee:
     # creating a variable
     num_of_emp = 0
@@ -31,6 +34,18 @@ class employee:
         name, last, pay = emp_str.split('-')
         return cls(name, last, pay)
 
+    # creating static method to determine whether it is working day or not
+
+    @staticmethod
+    def working_day(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        return True
+
+
+my_date = datetime.date(2020, 6, 17)
+
+print(employee.working_day(my_date))
 
 emp_1_str = 'Piyush-Zambad-5000'
 emp_2_str = 'Priyanka-Zambad-7000'
