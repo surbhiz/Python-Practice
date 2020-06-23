@@ -84,13 +84,10 @@ class developer(employee):
         super().__init__(name, last, pay)
         self.prog_lang = prog_lang
 
-<<<<<<< HEAD
 # magic method to add pay of two developers
     def __add__(self, other):
         return self.pay + other.pay
 
-=======
->>>>>>> Inherited_class
 # creating another new class manager
 
 
@@ -112,11 +109,7 @@ class manager(employee):
 
     def print_emp(self):
         for emp in self.employees:
-<<<<<<< HEAD
             print('-->', emp.fullname)
-=======
-            print('-->', emp.fullname())
->>>>>>> Inherited_class
 
 
 my_date = datetime.date(2020, 6, 17)
@@ -164,11 +157,7 @@ print(new_emp_2.pay)
 dev_1 = developer('Aarushi', 'Chajjed', 3000, 'Python')
 dev_2 = developer('Khushi', 'Chajjed', 11000, 'Java')
 
-<<<<<<< HEAD
 print(dev_1.fullname)
-=======
-print(dev_1.fullname())
->>>>>>> Inherited_class
 print(dev_1.email)
 print(dev_1.prog_lang)
 
@@ -181,7 +170,6 @@ mgr_1.remove_emp(dev_1)
 
 print(mgr_1.email)
 mgr_1.print_emp()
-<<<<<<< HEAD
 
 # to check whether a variable is instance of class isinstance() is used
 
@@ -196,5 +184,3 @@ print(issubclass(developer, manager))
 # here it was giving an object as output but after using magic methods it changes its output
 print(emp_1)
 print(dev_1+dev_2)
-=======
->>>>>>> Inherited_class
