@@ -4,10 +4,13 @@ import re
 
 
 def ispalindrome(str):
+    str = input("Enter your string:")
     forwards = ''.join(re.findall(r'[a-z]+', str.lower()))
     backwards = forwards[::-1]
-    return forwards == backwards
+    if(forwards == backwards):
+        print("The word,", str, ", is a palindrome ")
+    else:
+        print("The word,", str, ", is a not palindrome")
 
 
-str = input("Enter your string:")
 print(ispalindrome(str))
